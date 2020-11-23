@@ -1,0 +1,149 @@
+$font-stack: 10pt Verdana, sans-serif;
+
+.cont {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: content-box;
+  margin-top: 5px;
+  display: block;
+  margin: 0 auto;
+  background-color: #f6f6ef;
+}
+.head {
+  display: flex;
+  background-color: #ff6600;
+}
+.head-left {
+  flex-wrap: wrap;
+  display: flex;
+  flex: 1;
+}
+.element-head-right {
+  text-decoration: none;
+  font: $font-stack;
+  color: #222222;
+  line-height: 12px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+.element-head-left {
+  text-decoration: none;
+  font: $font-stack;
+  color: #222222;
+  line-height: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+#news {
+  display: flex;
+  flex-direction: column;
+}
+.newLine1 {
+  display: flex;
+  font: $font-stack;
+}
+.newLine2 {
+  display: flex;
+  font: $font-stack;
+  font-size: 8pt;
+  color: #828282;
+  padding-left: 35px;
+}
+.rank {
+  display: flex;
+  font: $font-stack;
+  color: #828282;
+  padding-left: 5px;
+}
+.arrow {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  margin: 3px 2px 6px;
+}
+.newTittle {
+  display: flex;
+  font: $font-stack;
+  color: #222222;
+  padding-left: 3px;
+}
+.newSource {
+  display: flex;
+  font: $font-stack;
+  font-size: 8pt;
+  color: #828282;
+  padding-top: 2px;
+}
+p {
+  font: $font-stack;
+  color: #828282;
+  padding-left: 35px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  max-width: 700px;
+  box-sizing: content-box;
+  margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+}
+.footerLinks {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+}
+.footerLink {
+  color: #000000;
+  text-decoration: none;
+  font: $font-stack;
+  font-size: 8pt;
+  padding: 5px;
+  height: 20px;
+}
+
+h2 {
+  font: $font-stack;
+  font-size: 18px;
+  color: #877f7e;
+  padding: 5px;
+  text-align: center;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  font: $font-stack;
+}
+
+form {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  input {
+    margin-bottom: 30px;
+    font: $font-stack;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    color: #828282;
+    resize: horizontal;
+  }
+
+  button {
+    display: block;
+    background-color: #877f7e;
+    padding: 10px 45px 10px 45px;
+    border: 0;
+    margin: 0 auto;
+    font: $font-stack;
+    font-size: 1em;
+    color: #f6f6ef;
+  }
+}
