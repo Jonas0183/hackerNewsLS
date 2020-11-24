@@ -72,7 +72,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             minify : {
-                collapseWhitespace: false,
+                collapseWhitespace: true,
                 removeComments: true,
                 removeRedundantAttributes: true,
                 removeScriptTypeAttributes: true,
@@ -84,7 +84,7 @@ module.exports = {
             template: './src/addNew.html',
             filename : 'addNew.html',
             minify : {
-                collapseWhitespace: false,
+                collapseWhitespace: true,
                 removeComments: true,
                 removeRedundantAttributes: true,
                 removeScriptTypeAttributes: true,

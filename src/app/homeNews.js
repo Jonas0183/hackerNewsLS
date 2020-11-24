@@ -1,23 +1,26 @@
-var content = document.getElementById('loadNews');
-const newsLocalStorage = localStorage.getItem('news');
-const parsedNews = JSON.parse(newsLocalStorage);
-const inner = ``;
-loadNews = () => {
-    for(var item in parsedNews) {
-        const hightLight = item.newHightLight     
+import img from './img/grayarrow.gif';
+
+export const loadNews = (content, storageKey) => {
+    const newsLocalStorage = localStorage.getItem(storageKey);
+    const parsedNews = JSON.parse(newsLocalStorage);
+    let newsHTML = "";
+
+    for(const item of parsedNews) {
+        const hightLight = item.newHightLight;   
         const newLink = item.newLink;
-        content += inner.innerHtml;
-        inner.innerHTML =
+        newsHTML +=
         `<div class="newLine1">
             <div class="rank">
                 1.
             </div>
             <div class="arrow">
-                <img src="../src/img/grayarrow.gif"></a>
+                <img src=${img}></a>
             </div>
             <div class="newTittle">${hightLight}</div>
             <div class="newSource"><a href="${newLink}">(${newLink})</div>
         </div>
         <div class="newLine2">xxx points by isp xx minutes ago | hide | xx comments</div>`;
     }
+    
+    content.innerHTML = newsHTML;
 }

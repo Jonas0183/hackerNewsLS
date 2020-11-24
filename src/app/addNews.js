@@ -3,7 +3,7 @@ const inputAuthor = document.getElementById('author');
 const inputLink = document.getElementById('link');
 const inputSource = document.getElementById('source');
 
-loadNew = () =>{
+export const loadNew = () =>{
     const hightlight = inputHightlight.value;
     const author = inputAuthor.value;
     const link = inputLink.value;
